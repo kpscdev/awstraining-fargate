@@ -23,9 +23,6 @@ public class SNSConfig {
     private String snsSecretKey;
     
     // TODO: lab1
-    //  0. Uncomment @Bean section.
-    //  1. Configure AmazonSNS which will be used by fargate within AWS.
-    //  2. Make sure that your task role has access to publish action (ecs-task-role-policy).
     //  3. Think how to connect with AWS Service from your local pc. 
     @Bean
     AmazonSNS configureSNSClient() {
