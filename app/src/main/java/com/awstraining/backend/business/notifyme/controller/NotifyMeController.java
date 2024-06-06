@@ -24,6 +24,7 @@ public class NotifyMeController implements NotifyMeApi {
     //  1. Inject service with business logic.
     @Autowired
     public NotifyMeController(NotifyMeService notifyMeService) {
+        this.notifyMeService = notifyMeService;
     }
 
 
