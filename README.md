@@ -4,8 +4,7 @@ This repository holds reference Spring Boot project that can be deployed to AWS.
 # Run locally
 First run ```mvn clean install``` in root directory. Maven will generate Open API auto-generated classes.
 Then, you should right-click on the **awstraining-backend** in Project structure on the left and select 
-**Maven -> Generate Sources & Update Folders**.
-
+**Maven -> Generate Sources & Update Foldersmvn 
 Then, please call ```docker-compose up``` in ```/local/assembly-local``` directory.
 
 This will set up the following components:
@@ -56,7 +55,7 @@ To do it, go to:
 and click on Fork button and then (+) Create new fork.
 
 After forking repository to your account, please clone it to your local machine and search for all occurrences of:
-* <<ACCOUNT_ID>>
+* 211125526255
 
 This is base AWS account id that we use for the base repository.
 You must replace this with your own account id in all files.
