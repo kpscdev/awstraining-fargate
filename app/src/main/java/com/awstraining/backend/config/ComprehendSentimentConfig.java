@@ -4,8 +4,6 @@ import com.amazonaws.auth.AWSStaticCredentialsProvider;
 import com.amazonaws.auth.BasicAWSCredentials;
 import com.amazonaws.services.comprehend.AmazonComprehend;
 import com.amazonaws.services.comprehend.AmazonComprehendClientBuilder;
-import com.amazonaws.services.translate.AmazonTranslate;
-import com.amazonaws.services.translate.AmazonTranslateClientBuilder;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -26,7 +24,6 @@ public class ComprehendSentimentConfig {
 
     @Bean
     AmazonComprehend configureComprehendClient() {
-        AmazonTranslate configureTranslatorClient() {
             if(snsAccessKey != null && snsSecretKey != null) {
                 return AmazonComprehendClientBuilder.standard().withCredentials(
                         new AWSStaticCredentialsProvider(
